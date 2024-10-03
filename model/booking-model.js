@@ -7,12 +7,12 @@ const bookingSchema = new Schema({
 
     firtName: {
         type: String,
-        require: true
+        // require: true
     },
 
     lastName: {
         type: String,
-        require: true
+        // require: true
     },
     
 
@@ -21,19 +21,19 @@ const bookingSchema = new Schema({
         enum: {
             values: ['male', 'female'],
         },
-        require: true
+        // require: true
     },
 
     seatNumber: {
         type: Number,
         // unique: true,
-        required: true
+        // required: true
     },
 
     emails: {
         type: String,
         // unique: true,
-        required: true
+        // required: true
     },
 
 

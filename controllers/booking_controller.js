@@ -29,7 +29,7 @@ export const postBooking = async (req, res, next) => {
 export const updateBooking = async (req, res, next) => {
 
 
-    res.status(200).json(bookings);
+    res.status(200).json(Booking);
 
 }
 
