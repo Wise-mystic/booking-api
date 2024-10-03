@@ -17,20 +17,20 @@ export const getOneBooking = (req, res, next) => {
 export const postBooking = async (req, res, next) => {
     try {
         const newBooking = new Booking();
-    
         const bookings = await newBooking.save(req.body);
-           
+
         res.status(201).json(bookings);
+
     } catch (error) {
-      next(error);
+        next(error);
     }
 }
 
 export const updateBooking = async (req, res, next) => {
-     
-         
-      res.status(200).json(bookings);
-  
+
+
+    res.status(200).json(bookings);
+
 }
 
 export const deleteBooking = (req, res) => {
